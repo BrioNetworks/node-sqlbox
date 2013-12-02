@@ -1,0 +1,16 @@
+{
+  "name": "node-sqlbox",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "request": "2.27.0",
+    "async": "0.2.9",
+    "mysql" : "2.0.0-alpha9",
+    "forever" : "0.10.9",
+    "winston" : "0.7.2",
+    "node-fs" : "0.1.7"
+  }
+}

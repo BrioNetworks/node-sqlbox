@@ -1,0 +1,32 @@
+{
+	
+	"dbConfig" : {
+		"user" : "sankar",
+		"password" : "Infi@1234",
+		"database" : "sqlbox",
+		"host" : "localhost"
+	},
+	"options" : {
+			"log" : true,
+			"batch" : 0,
+			"c" : 2,
+			"limit" : 10,
+			"table" : "send_sms2",
+			"waitTime" : 10,
+			"retryTimes" : 5
+		},
+
+	"query" : "/cgi-bin/sendsms?username=smssi&password=smssi@1234*..12&to={receiver}&from={sender}&text={message}&dlr-mask=19&smsc={smsc_id}&dlr-url={dlr_url}&coding={coding}&priority={pid}",
+
+	"boxes" : [
+		{
+			"url" : "http://sclient-lb1-350668513.ap-southeast-1.elb.amazonaws.com:13019"
+		},
+		{
+			"url" : "http://sclient-lb1-350668513.ap-southeast-1.elb.amazonaws.com:13020"
+		},
+		{
+			"url" : "http://sclient-lb1-350668513.ap-southeast-1.elb.amazonaws.com:13021"
+		}
+	]
+}
